@@ -1,9 +1,11 @@
 package com.educandoweb.cursofullstack.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.educandoweb.cursofullstack.entities.Game;
+import com.educandoweb.cursofullstack.entities.Record;
 
-public interface RecordRepository extends JpaRepository<Game, Long> {
+@Repository
+public interface RecordRepository extends JpaRepository<Record, Long> {
 
 }
